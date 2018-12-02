@@ -2,6 +2,7 @@ var $ = require('jquery');
 
 $(function(){
     $('#modal').on('click', function () {
-        alert("test");
+        console.log(123);
+        $(this).css('display', 'block');
     });
 });

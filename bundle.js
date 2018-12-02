@@ -93,13 +93,15 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-let $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 $(function(){
     $('#modal').on('click', function () {
-        alert("test");
+        console.log(123);
+        $(this).css('display', 'block');
     });
 });
+
 
 /***/ }),
 
